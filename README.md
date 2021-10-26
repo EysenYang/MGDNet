@@ -16,19 +16,24 @@ pandas,
 opencv-python,
 numpy
 
-Getting start:
+Getting start ==>
+
 Install from Github:
-git clone 
+
+git clone https://github.com/EysenYang/MGD_model_training.git
+
 cd MGD_model_training
+
 unzip data.zip
+
 (To use the example data, please unzip the data.zip and leave it in the original path.)
 
-Setting Environment Guide (Install from PyPi):
+Setting Environment Guide (Install from PyPi) ==>
 
 pip3 install -r requirements.txt
 
 
-Running the example script:
+Running the example script ==>
 
 Training:
 
