@@ -146,6 +146,6 @@ if __name__ == '__main__':
     result_data = result_data.assign(image_p3=internal_df[:,3])
     result_data = result_data.assign(image_p4=internal_df[:,4])
     result_data = result_data.assign(image_p5=internal_df[:,5])
-    result_data.to_csv("./prediction_external.csv")
+    result_data.to_csv("./val.csv")
 
 
