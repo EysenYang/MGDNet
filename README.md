@@ -1,20 +1,16 @@
 # MGD_model_training
 
-Platform: CUDA 10.2, Python 3.7.7
+Platform: CUDA 11.0, Python 3.7.7
 
 Python Dependencies:
 
-torch,
-torchvision,
-datetime,
-time,
-utils,
-apex,
-tqdm,
-pillow,
-pandas,
-opencv-python,
-numpy
+	torch==1.7.1+cu110,
+	torchvision==0.8.2+cu110,
+	tqdm==4.61.2,
+	pillow==8.3.1,
+	pandas==1.3.0,
+	opencv-python==4.5.2.54,
+	numpy==1.21.0
 
 <== Getting start ==>
 
