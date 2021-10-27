@@ -20,7 +20,7 @@ Getting start ==>
 
 Install from Github:
 
-git clone https://github.com/EysenYang/MGD_model_training.git
+git clone https://github.com/EysenYang/MGD_model_training
 
 cd MGD_model_training
 
