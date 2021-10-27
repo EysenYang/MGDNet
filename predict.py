@@ -136,7 +136,7 @@ if __name__ == '__main__':
     tjmuch_mean=[0.485, 0.456, 0.406]
     tjmuch_std =[0.229, 0.224, 0.225]
 
-    data_file = "./external_test.csv"
+    data_file = "./val.csv"
     result_data = pd.read_csv(data_file)
     internal_df = predict(model, result_data.image_name.to_list(), tjmuch_mean, tjmuch_std)
 
@@ -146,6 +146,6 @@ if __name__ == '__main__':
     result_data = result_data.assign(image_p3=internal_df[:,3])
     result_data = result_data.assign(image_p4=internal_df[:,4])
     result_data = result_data.assign(image_p5=internal_df[:,5])
-    result_data.to_csv("./val.csv")
+    result_data.to_csv("./predict_result.csv")
 
 
