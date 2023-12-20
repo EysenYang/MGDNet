@@ -36,6 +36,19 @@ Training:
 
 	python3 training.py --train-file ./trn.csv --val-file ./val.csv --epochs 120 -j 2 --output-dir ./resnet34_Ep120_wd1e4
 
+The final checkpoint files will be generated in the output folder and will appear in the form of model_xxx.pth.
+
 Predicting:
 
 	python3 predict.py 
+
+Expected output:
+	image_name	label	image_p1	image_p2	image_p3	image_p4	image_p5	image_p6
+./data/N/1002.jpg	0	0.758973539	0.062725827	5.93E-05	3.37E-05	0.174801379	0.003406364
+./data/N_K/1940.jpg	1	0.001687979	0.926098049	3.35E-05	8.07E-06	0.000528317	0.07164406
+./data/W/1080.jpg	2	0.001754218	0.002595291	0.982559681	0.008812006	0.003825066	0.000453728
+./data/W_Z/551.jpg	3	0.000158101	0.000112213	0.021836495	0.976503253	0.001225252	0.000164684
+./data/Z/1135.jpg	4	0.069005467	0.132829428	0.396607846	0.091052495	0.13766253	0.172842279
+./data/Z_K/3082.jpg	5	0.020390244	0.142778814	0.077948295	0.352566421	0.16126579	0.24505043
+
+The expected output will be a CSV file containing 8 columns of information, where the first column is the image name, the second column is the label, and the third to eighth columns are the predicted probabilities for the six subtypes of the current image.
