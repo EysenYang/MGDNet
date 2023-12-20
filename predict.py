@@ -140,12 +140,12 @@ if __name__ == '__main__':
     result_data = pd.read_csv(data_file)
     internal_df = predict(model, result_data.image_name.to_list(), tjmuch_mean, tjmuch_std)
 
-    result_data = result_data.assign(image_p0=internal_df[:,0])
-    result_data = result_data.assign(image_p1=internal_df[:,1])
-    result_data = result_data.assign(image_p2=internal_df[:,2])
-    result_data = result_data.assign(image_p3=internal_df[:,3])
-    result_data = result_data.assign(image_p4=internal_df[:,4])
-    result_data = result_data.assign(image_p5=internal_df[:,5])
+    result_data = result_data.assign(Normal=internal_df[:,0])
+    result_data = result_data.assign(NMGO=internal_df[:,1])
+    result_data = result_data.assign(MGA=internal_df[:,2])
+    result_data = result_data.assign(MGO=internal_df[:,3])
+    result_data = result_data.assign(MGAO=internal_df[:,4])
+    result_data = result_data.assign(MGOO=internal_df[:,5])
     result_data.to_csv("./predict_result.csv")
 
 
