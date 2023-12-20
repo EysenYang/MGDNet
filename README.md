@@ -57,10 +57,10 @@ Expected output:
 The expected output will be a CSV file containing 8 columns of information, where the first column is the image name, the second column is the label, and the third to eighth columns are the predicted probabilities for the six subtypes of the current image.
 
 Classification Standard:
-Normal group: meibomian glands and ducts are normal. 
-NMGO group: full meibomian glands with opening.
-MGA group: tire-like meibomian gland epithelial cells are absent, the acinar wall disappears, becomes smaller, or the fiber cord changes.
-MGO group: enlarged acinus and blocked meibum in the acinus.
-MGAO group: shows the characteristics of both the atrophy group and obstruction group.
-MGOO group: normal meibomian gland opening with highly dilated meibomian gland secretory tube and blocked meibomian gland acinus.
+	Normal group: meibomian glands and ducts are normal. 
+	NMGO group: full meibomian glands with opening.
+	MGA group: tire-like meibomian gland epithelial cells are absent, the acinar wall disappears, becomes smaller, or the fiber cord changes.
+	MGO group: enlarged acinus and blocked meibum in the acinus.
+	MGAO group: shows the characteristics of both the atrophy group and obstruction group.
+	MGOO group: normal meibomian gland opening with highly dilated meibomian gland secretory tube and blocked meibomian gland acinus.
 
