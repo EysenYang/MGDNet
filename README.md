@@ -43,7 +43,7 @@ Predicting:
 	python3 predict.py 
 
 
-Expected output:
+Expected output:(predict_result.csv)
 
 	image_name	label	Normal	NMGO	MGA	MGO	MGAO	MGOO
 	./data/N/1002.jpg	0	0.758973539	0.062725827	5.93E-05	3.37E-05	0.174801379	0.003406364
@@ -59,11 +59,11 @@ The expected output will be a CSV file containing 8 columns of information, wher
 
 Classification Standard:
 
-	Normal group: meibomian glands and ducts are normal. 
-	NMGO group: full meibomian glands with opening.
-	MGA group: tire-like meibomian gland epithelial cells are absent, the acinar wall disappears, becomes smaller, or the fiber cord changes.
-	MGO group: enlarged acinus and blocked meibum in the acinus.
-	MGAO group: shows the characteristics of both the atrophy group and obstruction group.
-	MGOO group: normal meibomian gland opening with highly dilated meibomian gland secretory tube and blocked meibomian gland acinus.
+	Normal group(label:0): meibomian glands and ducts are normal. 
+	NMGO group(label:1): full meibomian glands with opening.
+	MGA group(label:2): tire-like meibomian gland epithelial cells are absent, the acinar wall disappears, becomes smaller, or the fiber cord changes.
+	MGO group(label:3): enlarged acinus and blocked meibum in the acinus.
+	MGAO group(label:4): shows the characteristics of both the atrophy group and obstruction group.
+	MGOO group(label:5): normal meibomian gland opening with highly dilated meibomian gland secretory tube and blocked meibomian gland acinus.
 	
 
